@@ -1,9 +1,9 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
-tailHead = rand(2)
+tail_head = rand(2)
 
-if tailHead == 0
-    puts "Tail"
+if tail_head.zero?
+  puts 'Tail'
 else
-    puts "Head"
+  puts 'Head'
 end

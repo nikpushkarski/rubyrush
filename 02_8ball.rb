@@ -1,36 +1,32 @@
-# coding: utf-8
-
-
+# frozen_string_literal: true
 
 answers = [
-  # Положительные
-  "Бесспорно",
-  "Предрешено",
-  "Никаких сомнений",
-  "Определённо да",
-  "Можешь быть уверен в этом",
+  # Affirmative
+  'It is certain',
+  'It is decidedly so',
+  'Without a doubt',
+  'Yes — definitely',
+  'You may rely on it',
+  'As I see it, yes',
+  'Most likely',
+  'Outlook good',
+  'Yes',
+  'Signs point to yes',
 
-  # Нерешительно положительные
-  "Мне кажется — «да»",
-  "Вероятнее всего",
-  "Хорошие перспективы",
-  "Знаки говорят — «да»",
-  "Да",
+  # Non-committal
+  'Reply hazy, try again',
+  'Ask again later',
+  'Better not tell you now',
+  'Cannot predict now',
+  'Concentrate and ask again',
 
-  # Нейтральные
-  "Пока не ясно, попробуй снова",
-  "Спроси позже",
-  "Лучше не рассказывать",
-  "Сейчас нельзя предсказать",
-  "Сконцентрируйся и спроси опять",
-
-  # Отрицательные
-  "Даже не думай",
-  "Мой ответ — «нет»",
-  "По моим данным — «нет»",
-  "Перспективы не очень хорошие",
-  "Весьма сомнительно"
+  # Negative
+  "Don't count on it",
+  'My reply is no',
+  'My sources say no',
+  'Outlook not so good',
+  'Very doubtful'
 ]
 
-puts "Привет, пользователь. Отвечаю...\n\n"
+puts "Hey user, here is the answer...\n\n"
 puts answers.sample

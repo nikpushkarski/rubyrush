@@ -1,9 +1,9 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
-men = ["Gregory", "George", "Mihaal"]
+men = %w[Gregory George Mihaal]
 
-women = ["Kate", "Lisa", "Monique"]
+women = %w[Kate Lisa Monique]
 
-allTogether = men + women
+all_together = men + women
 
-puts allTogether.to_s
+puts all_together.to_s

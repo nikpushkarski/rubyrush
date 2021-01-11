@@ -1,41 +1,33 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
-randomNumber = rand(17)
-puts "Guess the number in the range of 0..16"
+random_number = rand(17)
+puts 'Guess the number in the range of 0..16'
 
 guess = gets.to_i
 
-if guess == randomNumber
-    abort "Right!"
+if guess == random_number
+  abort 'Right!'
 else
-  if guess <= (randomNumber-2).abs
-  puts "Warm...(a bit higher)"
-  end
+  puts 'Warm...(a bit higher)' if guess <= (random_number - 2).abs
 
-  if guess >= (randomNumber+2).abs
-  puts "Warm...(a bit less)"
-  end
+  puts 'Warm...(a bit less)' if guess >= (random_number + 2).abs
 end
 
 guess = gets.to_i
 
-if guess == randomNumber
-    abort "Right!"
+if guess == random_number
+  abort 'Right!'
 else
-  if guess <= (randomNumber-2).abs
-  puts "Warm...(a bit higher)"
-  end
-  
-  if guess >= (randomNumber+2).abs
-  puts "Warm...(a bit less)"
-  end
+  puts 'Warm...(a bit higher)' if guess <= (random_number - 2).abs
+
+  puts 'Warm...(a bit less)' if guess >= (random_number + 2).abs
 end
 
 guess = gets.to_i
 
-if guess == randomNumber
-    abort "Right!"
+if guess == random_number
+  abort 'Right!'
 else
-  puts "Sorry, you lose"
+  puts 'Sorry, you lose'
   abort
 end

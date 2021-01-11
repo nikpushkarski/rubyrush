@@ -1,9 +1,9 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
 number = 1990
 
-if number % 2 == 0
-    puts "The number is even"
+if number.even?
+  puts 'The number is even'
 else
-    puts "The number is odd"
+  puts 'The number is odd'
 end

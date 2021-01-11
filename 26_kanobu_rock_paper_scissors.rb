@@ -1,32 +1,30 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
-options = ["rock", "paper", "scissors"]
+options = %w[rock paper scissors]
 
 puts "Enter your option:
   0 — rock
   1 – paper
   2 — scissors"
 
-playerChoice = gets.to_i
+player_choice = gets.to_i
 
-computerChoice = rand(3)
-# computerChoice = 1
+computer_choice = rand(3)
 
-if computerChoice == playerChoice
-  puts "Your choice: " + options[playerChoice]
-  puts "PC choice: " + options[computerChoice]
+if computer_choice == player_choice
+  puts "Your choice: #{options[player_choice]}"
+  puts "PC choice: #{options[computer_choice]}"
   puts "It's a draw"
   abort
 end
 
-if (playerChoice == 0 && computerChoice == 2) ||
-   (playerChoice == 1 && computerChoice == 0) ||
-   (playerChoice == 2 && computerChoice == 1)
-  puts "Your choice: " + options[playerChoice]
-  puts "PC choice: " + options[computerChoice]
-  puts "YOU WIN!"
+puts "Your choice: #{options[player_choice]}"
+puts "PC choice: #{options[computer_choice]}"
+
+if (player_choice.zero? && computer_choice == 2) ||
+   (player_choice == 1 && computer_choice.zero?) ||
+   (player_choice == 2 && computer_choice == 1)
+  puts 'YOU WIN!'
 else
-  puts "Your choice: " + options[playerChoice]
-  puts "PC choice: " + options[computerChoice]
-  puts "You lose, PC wins."
+  puts 'You lose, PC wins.'
 end

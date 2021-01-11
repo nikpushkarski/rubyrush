@@ -1,20 +1,20 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
-puts "Enter a number: "
+puts 'Enter a number: '
 
 number_array = []
 count = 1
 sum = 0
-user_input = gets.to_i;
+user_input = gets.to_i
 
-while count <= user_input do 
+while count <= user_input
   number_array << count
   count += 1
 end
 
 puts number_array.to_s
 
-for item in number_array do
+number_array.each do |item|
   sum += item
 end
 

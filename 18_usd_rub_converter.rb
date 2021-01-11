@@ -1,10 +1,10 @@
-#encoding: utf-8
+# frozen_string_literal: true
 
-puts "USD rate:"
-usdRate = gets.to_f.round(2)
+puts 'USD rate:'
+usd_rate = gets.to_f.round(2)
 
-puts "Amount of rubles:"
-rubAmount = gets.to_f.round(2)
+puts 'Amount of rubles:'
+rub_amount = gets.to_f.round(2)
 
-usdAmount = rubAmount / usdRate
-puts "You've got " + usdAmount.round(2).to_s + " USD"
+usd_amount = rub_amount / usd_rate
+puts "You've got #{usd_amount.round(2)} USD"

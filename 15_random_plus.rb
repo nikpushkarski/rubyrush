@@ -1,16 +1,14 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
-tailHead = rand(2)
+tail_head = rand(2)
 edge = rand(10)
 
 if edge == 9
-    puts "Edge = " + edge.to_s
-    puts "It's edge!"
+  puts "Edge = #{edge}"
+  puts "It's edge!"
 
-else 
-  if tailHead == 0
-    puts "Tail"
-  else
-    puts "Head"
-  end
+elsif tail_head.zero?
+  puts 'Tail'
+else
+  puts 'Head'
 end

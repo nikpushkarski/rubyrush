@@ -1,27 +1,26 @@
-#encoding: utf-8
+# frozen_string_literal: true
 
 puts "What currency do you have?
       1. USD
       2. RUB"
 currency = gets.chomp
 
-if currency == "1"
-  puts "RUB rate:"
-  rubRate = gets.to_f.round(3)
-  
-  puts "Amount of dollars:"
-  usdAmount = gets.to_f.round(3)
-  
-  rubAmount = usdAmount / rubRate
-  puts "You've got " + rubAmount.round(2).to_s + " RUB"
-else
-  puts "USD rate:"
-  usdRate = gets.to_f.round(2)
-  
-  puts "Amount of rubles:"
-  rubAmount = gets.to_f.round(2)
-  
-  usdAmount = rubAmount / usdRate
-  puts "You've got " + usdAmount.round(2).to_s + " USD"
-end
+if currency == '1'
+  puts 'RUB rate:'
+  rub_rate = gets.to_f.round(3)
 
+  puts 'Amount of dollars:'
+  usd_amount = gets.to_f.round(3)
+
+  rub_amount = usd_amount / rub_rate
+  puts "You've got #{rub_amount.round(2)} RUB"
+else
+  puts 'USD rate:'
+  usd_rate = gets.to_f.round(2)
+
+  puts 'Amount of rubles:'
+  rub_amount = gets.to_f.round(2)
+
+  usd_amount = rub_amount / usd_rate
+  puts "You've got #{usd_amount.round(2)} USD"
+end

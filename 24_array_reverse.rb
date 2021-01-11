@@ -1,15 +1,15 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
 numbers = [1, 2, 3, 4, 5]
 
-puts "The original array: " + numbers.to_s
+puts "The original array: #{numbers}"
 
-puts "The arrays's numbers in reversed order: " + numbers.reverse().to_s
+puts "The arrays's numbers in reversed order: #{numbers.reverse}"
 
-puts "---"
+puts '---'
 
-puts "The original array: " + numbers.to_s
+puts "The original array: #{numbers}"
 
 numbers.reverse!
 
-puts "The original array has been changed, now it's reversed: " + numbers.to_s
+puts "The original array has been changed, now it's reversed: #{numbers}"
