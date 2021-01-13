@@ -13,6 +13,7 @@ AllCops:
 Style/MethodCallWithArgsParentheses:
   Description: Use parentheses for method calls with arguments.
   StyleGuide: "#method-invocation-parens"
+  IgnoredMethods: ['puts', 'p', 'require', 'include']
   Enabled: true
 
 # Offense count: 1
