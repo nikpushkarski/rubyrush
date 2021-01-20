@@ -4,8 +4,8 @@ require_relative 'london'
 require_relative 'paris'
 require_relative 'rome'
 
-visit_paris()
+visit_paris
 
-visit_rome()
+visit_rome
 
-visit_london()
+visit_london
